@@ -45,5 +45,3 @@
   }
 
 })();
-/*
-<link rel="icon" type="image/x-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAQlBMVEUAAAAdm/Adm/Acm/Ecme8fme8dmu8cmu8dmvEcl+8emu8cm/AcmvAcmu8bmu8bm+8cm+8Un+8dmu8cm/Aem+8dm/CTaekCAAAAFXRSTlMA799/cCBgwJ9AML+wkGBQQBDQz3AtZVjlAAAArUlEQVQ4y9XPWxaDIAwE0CQ8iqAittn/VlsPNA2FDXi/PJnRRLipJSFTcNdTqZPd6txwZWwKbbSyauwsyMU6e37qUiDJcaUsBaalHcCKh2rjS8ptg8jQOPx+0y5GFRw05cVTRe5KNMsRQG6YekghzgsbiPkNEX48zTcIu+FQ8Lpw8CBAx/zn5KDnz75wwCCiPmCMjcqxfz/vJlD3g8P+RxcfMHJ2PZEZz2AL3NAbhhsdJcc9SP4AAAAASUVORK5CYII=" id="customFavicon"></link>*/
