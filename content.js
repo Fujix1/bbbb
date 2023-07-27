@@ -17,31 +17,21 @@
   const url = location.href;
   if (url.indexOf("https://twitter.com") !== -1) {
 
-  const observerFavicon = new MutationObserver( (mutations, obs) => {
-    applyFavicon();
-  });
-
-  const observerHead = new MutationObserver( (mutations, obs) => {
-      const targetFavicon = document.querySelector('head link[rel="shortcut icon"]');
-
-      if (targetFavicon) {
-        //window.alert('DEPLOYED:' + targetFavicon.href);
-        obs.disconnect();
-    
-        // Insert favicon 
-        document.head.insertAdjacentHTML('beforeend', '<link rel="icon" type="image/x-icon" id="bbbbfavicon"></link>');
-        applyFavicon();
-
-        observerFavicon.observe( targetFavicon, {
-          attributes: true,
-        });
-        
-      }
+    const observerFavicon = new MutationObserver( (mutations, obs) => {
+      applyFavicon();
     });
 
-    observerHead.observe( document.head, {
-      childList: true,
-    });
+    const targetFavicon = document.querySelector('head link[rel="shortcut icon"]');
+    if (targetFavicon) {
+
+      // Insert favicon 
+      document.head.insertAdjacentHTML('beforeend', '<link rel="icon" type="image/x-icon" id="bbbbfavicon"></link>');
+      applyFavicon();
+
+      observerFavicon.observe( targetFavicon, {
+        attributes: true,
+      });
+    }
   }
 
 })();
